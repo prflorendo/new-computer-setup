@@ -12,7 +12,7 @@ git config --global user.email 'pflorend@purdue.edu'
 # directory where stuff will be cloned to
 mkdir ~/.zsh
 
-mv MesloLGMDZNerdFontMono-Regular.ttf /usr/share/fonts/
+sudo mv MesloLGMDZNerdFontMono-Regular.ttf /usr/share/fonts/
 mv .zshrc ~/.zshrc
 
 cd ~/.zsh
