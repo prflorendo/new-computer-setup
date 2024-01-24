@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # install necessary zsh stuff
+sudo apt update
 sudo apt -y install git guake tmux zsh git-all gh neovim
 
 gh auth login
@@ -30,5 +31,7 @@ git clone https://github.com/eza-community/eza.git ~/.zsh/eza
 chsh -s /bin/zsh
 
 sudo echo 'pflow ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown' >> /etc/sudoers
+
+sudo apt upgrade
 
 sudo reboot
