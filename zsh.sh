@@ -31,6 +31,7 @@ git clone https://github.com/eza-community/eza.git ~/.zsh/eza
 chsh -s /bin/zsh
 
 sudo echo 'pflow ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown' >> /etc/sudoers
+sudo update-alternatives --config editor
 
 sudo apt upgrade
 
