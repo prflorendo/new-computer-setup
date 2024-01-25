@@ -56,10 +56,6 @@ alias vim='nvim'
 alias bye='sudo shutdown now'
 alias hi='sudo reboot now'
 
-alias ga='git add .'
-alias gc='git commit -m'
-alias gp='git push'
-
 # History-Substring-Search
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
@@ -68,4 +64,3 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # eza
 export FPATH="~/.zsh/eza/completions/zsh:$FPATH"
-
