@@ -44,12 +44,12 @@ alias ls='ls --color=auto'
 alias python='python3'
 
 alias no='ls'
-alias n='ls'
-alias l='ls'
 
 alias je='cd'
-alias c='cd'
-alias j='cd'
+
+alias c='conda'
+alias ca='conda activate'
+alias cu='conda env update --file'
 
 alias vim='nvim'
 
