@@ -42,7 +42,19 @@ unset __conda_setup
 export PATH=~/anaconda3/bin:$PATH
 alias ls='ls --color=auto'
 alias python='python3'
+
 alias no='ls'
+alias n='ls'
+alias l='ls'
+
+alias je='cd'
+alias c='cd'
+alias j='cd'
+
+alias vim='nvim'
+
+alias bye='sudo shutdown now'
+alias hi='sudo reboot now'
 
 # History-Substring-Search
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -52,7 +64,4 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # eza
 export FPATH="~/.zsh/eza/completions/zsh:$FPATH"
-alias vim=nvim
-alias bye='sudo shutdown now'
-alias hi='sudo reboot now'
 
