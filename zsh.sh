@@ -36,3 +36,7 @@ sudo update-alternatives --config editor
 sudo apt upgrade
 
 sudo reboot
+
+#sudoers thing broken for some reason, fix later
+#also install powertop + tlp for laptops
+#TODO add vim config stuff
