@@ -53,6 +53,8 @@ alias cu='conda env update --file'
 
 alias vim='nvim'
 
+alias gpa='find . -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
+
 alias bye='sudo shutdown now'
 alias hi='sudo reboot now'
 
