@@ -57,7 +57,8 @@ sudo update-alternatives --config editor
 
 sudo apt upgrade
 
-# sudo echo 'pflow ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown' >> /etc/sudoers
+# <group> ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown'
 # also install powertop + tlp for laptops
+# TODO: Add stuff to install vivaldi, discord, spotify
 
 sudo reboot
