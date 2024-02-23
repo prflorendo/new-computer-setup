@@ -2,7 +2,7 @@
 
 # install necessary zsh stuff
 sudo apt update
-sudo apt -y install git guake tmux zsh git-all gh neovim
+sudo apt -y install git guake tmux zsh git-all gh
 
 gh auth login
 git config --global core.editor 'nvim'

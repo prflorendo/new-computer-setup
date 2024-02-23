@@ -40,12 +40,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH=~/anaconda3/bin:$PATH
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias python='python3'
 
 alias no='ls'
-
-alias je='cd'
 
 alias c='conda'
 alias ca='conda activate'
@@ -65,3 +63,10 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # eza
 export FPATH="~/.zsh/eza/completions/zsh:$FPATH"
+
+export PATH="/home/pflow/.local/bin:$PATH"
+eval "$(zoxide init --cmd cd zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias ls='eza'
