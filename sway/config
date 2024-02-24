@@ -18,8 +18,7 @@
 #========================#
 # Declare Colors:
 set $background #332b2b
-set $color_urgent #fb4934
-set $text_color #ffffff
+set $color_urgent #fb4934 set $text_color #ffffff
 set $title_bg_unfocused #666666
 set $title_outline_active #0e844e
 set $title_outline_unfocused #332b2b
@@ -130,6 +129,10 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+input "type:keyboard" {
+	xkb_layout dv
+}
 
 
 #=================================#
