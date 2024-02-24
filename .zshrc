@@ -51,7 +51,6 @@ alias cu='conda env update --file'
 
 alias vim='nvim'
 
-alias gpa='find . -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin main \;'
 alias bye='sudo shutdown now'
 alias hi='sudo reboot now'
 
@@ -70,3 +69,4 @@ eval "$(zoxide init --cmd cd zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias ls='eza'
+fpath+=${ZDOTDIR:-~}/.zsh_functions
