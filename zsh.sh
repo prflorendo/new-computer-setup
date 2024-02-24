@@ -88,6 +88,34 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 mkdir -p ${ZDOTDIR:-~}/.zsh_functions
 
+cd ~/Downloads
+# install discord
+update_url="https://pax.discord.com/api/download?platform=linux&format=deb"
+download_url=$(curl -w "%{url_effective}" -ILSs "$update_url" -o /dev/null)
+upstream_version=$(awk -F/ '{print $6}' <<<"$download_url")
+
+higher_version=$(
+    printf "%s\n" "$upstream_version" "$current_version" \
+    | sort --version-sort --reverse | head -1
+)
+
+if [[ $current_version != $higher_version ]]; then
+        curl -sO "$download_url"
+        filename=${download_url##*/}
+        sudo apt-get -y --fix-broken install ./"$filename"
+fi
+rm discord*
+
+# Install spotify
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+
+# Install vivaldi
+curl -O https://downloads.vivaldi.com/stable/vivaldi-stable_6.5.3206.63-1_amd64.deb
+sudo apt install -y ./vivaldi*
+rm vivaldi*
+
 # update the rest of the packages 
 sudo apt upgrade
 
