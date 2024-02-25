@@ -4,7 +4,7 @@
 sudo apt update
 sudo apt install -y git tmux zsh git-all gh ninja-build gettext cmake unzip curl gpg
 sudo apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-sudo apt install -y desktop-file-utils scdoc stow
+sudo apt install -y desktop-file-utils scdoc stow ripgrep
 
 # rust stuff
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
